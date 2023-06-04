@@ -2,8 +2,9 @@
 const express = require('express');
 const PORT = 3000 ;
 //Express
+const cors = require('cors');
 const app = express();
-
+app.use(cors());
 app.use(express.json())
 //config
 app.set('port',PORT);
